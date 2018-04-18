@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Adam Storr</Authors>
+    <Company />
+    <Product />
+    <Description>AspNetCore Webhook Receiver for the Fitbit Subscription API</Description>
+    <PackageTags>Fitbit .NET aspnetcore</PackageTags>
+    <Version>0.0.1-preview</Version>
+    <PackageLicenseUrl>https://github.com/WestDiscGolf/Fitbit.Net-Webhook/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Copright 2018 Adam Storr</Copyright>
+    <PackageProjectUrl>https://github.com/WestDiscGolf/Fitbit.Net-Webhook</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/WestDiscGolf/Fitbit.Net-Webhook</RepositoryUrl>
+    <PackageId>FitbitNet.AspNetCore.WebHooks.Receivers</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.WebHooks.Receivers" Version="1.1.0-preview1-34007" />
+  </ItemGroup>
+
+</Project>

@@ -6,8 +6,8 @@
     <None Remove="ppmygji2.gab~" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.0-preview3-32233" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0-preview1-34007" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.0-rc1-30611" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.1.0-rc1-30611" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\FitbitNet.AspNetCore.WebHooks.Receivers\FitbitNet.AspNetCore.WebHooks.Receivers.csproj" />

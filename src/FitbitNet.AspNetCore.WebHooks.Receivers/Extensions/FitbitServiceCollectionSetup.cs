@@ -23,6 +23,7 @@ namespace FitbitNet.AspNetCore.WebHooks.Receivers.Extensions
 
             services.TryAddSingleton<FitbitVerifySubscriberFilter>();
             services.TryAddSingleton<FitbitVerifySignatureFilter>();
+            services.TryAddSingleton<FitbitActionResultFilter>();
         }
     }
 }

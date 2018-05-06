@@ -46,7 +46,7 @@ You will need to add a controller to handle the request when it comes in. You ca
 public class FitbitController : ControllerBase
 {
     [FitbitWebHook]
-    public IAsyncResult FitbitSubscription(string id, Notification[] data)
+    public IActionResult FitbitSubscription(string id, Notification[] data)
     {
         // add code here
     }
@@ -57,7 +57,7 @@ Or if you want to have an end point to handle specific subscription id then you 
 public class FitbitController : ControllerBase
 {
     [FitbitWebHook(Id="my_id_here")]
-    public IAsyncResult FitbitSubscriptionId(Notification[] data)
+    public IActionResult FitbitSubscriptionId(Notification[] data)
     {
         // add code here
     }

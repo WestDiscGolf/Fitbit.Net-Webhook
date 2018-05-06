@@ -11,6 +11,7 @@ namespace FitbitNet.AspNetCore.WebHooks.Receivers.Metadata
     {
         private readonly FitbitVerifySubscriberFilter _fitbitVerifySubscriberFilter;
         private readonly FitbitVerifySignatureFilter _fitbitVerifySignatureFilter;
+        private readonly FitbitActionResultFilter _fitbitActionResultFilter;
 
         /// <summary>
         /// Basic constructor defining that the receiver name is <see cref="FitbitConstants.ReceiverName"/> taking in the dependencies the 
@@ -18,11 +19,13 @@ namespace FitbitNet.AspNetCore.WebHooks.Receivers.Metadata
         /// </summary>
         public FitbitMetadata(
             FitbitVerifySubscriberFilter fitbitVerifySubscriberFilter,
-            FitbitVerifySignatureFilter fitbitVerifySignatureFilter)
+            FitbitVerifySignatureFilter fitbitVerifySignatureFilter,
+            FitbitActionResultFilter fitbitActionResultFilter)
             : base(FitbitConstants.ReceiverName)
         {
             _fitbitVerifySubscriberFilter = fitbitVerifySubscriberFilter;
             _fitbitVerifySignatureFilter = fitbitVerifySignatureFilter;
+            _fitbitActionResultFilter = fitbitActionResultFilter;
         }
 
         /// <summary>
@@ -35,6 +38,7 @@ namespace FitbitNet.AspNetCore.WebHooks.Receivers.Metadata
         {
             context.Results.Add(_fitbitVerifySubscriberFilter);
             context.Results.Add(_fitbitVerifySignatureFilter);
+            context.Results.Add(_fitbitActionResultFilter);
         }
     }
 }

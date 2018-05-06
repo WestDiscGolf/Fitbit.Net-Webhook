@@ -10,7 +10,7 @@ namespace FitbitNet.AspNetCore.WebHooks.Receivers.Test.Metadata
         public void CorrectRecieverName()
         {
             // Arrange
-            var sut = new FitbitMetadata(null, null);
+            var sut = new FitbitMetadata(null, null, null);
 
             // Act
             var result = sut.ReceiverName;
@@ -23,7 +23,7 @@ namespace FitbitNet.AspNetCore.WebHooks.Receivers.Test.Metadata
         public void CorrectBodyType()
         {
             // Arrange
-            var sut = new FitbitMetadata(null, null);
+            var sut = new FitbitMetadata(null, null, null);
 
             // Act
             var result = sut.BodyType;
